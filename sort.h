@@ -1,11 +1,13 @@
 #ifndef SORT_H
 #define SORT_H
 
-#include <stddef.h>
+/*Headers*/
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <stddef.h>
 
+/* Strucs */
 /**
  * struct listint_s - Doubly linked list node
  *
@@ -20,9 +22,9 @@ typedef struct listint_s
 	struct listint_s *next;
 } listint_t;
 
-/* Function prototypes */
-void print_array(const int *array, size_t size);
+/*Functions*/
 void print_list(const listint_t *list);
+void print_array(const int *array, size_t size);
 void bubble_sort(int *array, size_t size);
 void insertion_sort_list(listint_t **list);
 void selection_sort(int *array, size_t size);
